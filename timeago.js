@@ -87,7 +87,7 @@ $l.inWords = function (distanceMillis) {
     years < 2 && substitute($l.year, 1) ||
     substitute($l.years, Math.floor(years));
 
-  return [prefix, words, suffix].join(" ").toString().trim();
+  return [prefix, words, suffix].join("").toString().trim();
 };
 
 function parse (iso8601) {
