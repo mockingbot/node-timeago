@@ -45,7 +45,8 @@ var settings = {
     months: "%d months",
     year: "about a year",
     years: "%d years",
-    numbers: []
+    numbers: [],
+    wordSeparator: " "
   }
 };
 
@@ -87,7 +88,9 @@ $l.inWords = function (distanceMillis) {
     years < 2 && substitute($l.year, 1) ||
     substitute($l.years, Math.floor(years));
 
-  return [prefix, words, suffix].join("").toString().trim();
+  var separator = $l.wordSeparator || "";
+  if ($l.wordSeparator === undefined) { separator = " "; }
+  return [prefix, words, suffix].join(separator).toString().trim();
 };
 
 function parse (iso8601) {
