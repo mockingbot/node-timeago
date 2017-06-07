@@ -3,7 +3,7 @@
   "contributors": [
     "Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.mikealrogers.com)"
   ],
-  "name": "timeago",
+  "name": "@mockingbot/timeago",
   "description": "A wrapper for Ryan McGeary's Pretty Date function",
   "version": "0.2.0",
   "repository": {
